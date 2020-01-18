@@ -13,11 +13,11 @@ Send JSON test message to AMQP message queue with a Kubernetes cluster
 - apply Helm chart to current namespace  
   `helm upgrade --install -f ./helm/amqp-send-test/production-values.yaml amqp-send-test ./helm/amqp-send-test`
 
-- attach shell to pod  
-  `kubectl exec -it POD_NAME -- /bin/sh`
-
 - copy `message.json` to container
   `kubectl cp ./message.json NAMESPACE/POD_NAME:/usr/src/app`
+  
+- attach shell to pod  
+  `kubectl exec -it POD_NAME -- /bin/sh`
 
 - send message  
   `node send-message.js`
