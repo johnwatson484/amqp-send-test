@@ -1,4 +1,5 @@
 name: amqp-send-test
+image: johnwatson484/amqp-send-test:1.0.0
 environment: production
 container:
   messageHost: amqp-send-test-message
