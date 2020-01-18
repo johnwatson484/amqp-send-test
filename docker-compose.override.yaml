@@ -6,7 +6,7 @@ version: '3.7'
 services:
   amqp-send-test:
     command: >
-      sh -c "scripts/wait-for.sh amqp-send-test-message:8161 -- npm run start:watch"
+      sh -c "scripts/wait-for.sh amqp-send-test-message:8161 -- tail -f /dev/null"
     volumes:
       - node_modules:/usr/src/app/node_modules
       - .:/usr/src/app

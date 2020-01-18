@@ -17,4 +17,4 @@ RUN npm install
 # Bundle app source
 COPY --chown=node:node . .
 
-CMD [ "node", "send-message" ]
+CMD tail -f /dev/null
