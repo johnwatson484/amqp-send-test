@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  amqp-send-test:
+    build: .
+    image: amqp-send-test
+    container_name: amqp-send-test

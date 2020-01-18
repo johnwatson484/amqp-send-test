@@ -1,0 +1,24 @@
+name: amqp-send-test
+environment: production
+container:
+  messageHost: amqp-send-test-message
+  messagePort: 5672
+  messageTransport: tcp
+  messageUsername: artemis
+  messagePassword: artemis
+  messageQueue: test-queue
+  imagePullPolicy: IfNotPresent
+  requestMemory: 30Mi
+  requestCpu: 10m
+  limitMemory: 60Mi
+  limitCpu: 40m
+  runAsNonRoot: true
+  runAsUser: 1000
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false
+  restartPolicy: Always
+  redeployOnChange: update this field to force a change
+replicaCount: 1
+minReadySeconds: 10
+maxSurge: 1
+maxUnavailable: 1

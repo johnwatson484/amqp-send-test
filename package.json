@@ -1,0 +1,25 @@
+{
+  "name": "amqp-send-test",
+  "version": "1.0.0",
+  "description": "Send test message via AMQP 1.0 protocol",
+  "main": "sendMessage.js",
+  "scripts": {
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch send-message.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwatson484/amqp-send-test.git"
+  },
+  "author": "John Watson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnwatson484/amqp-send-test/issues"
+  },
+  "homepage": "https://github.com/johnwatson484/amqp-send-test#readme",
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "rhea": "^1.0.15",
+    "rhea-promise": "^1.0.0",
+    "standard": "^14.3.1"
+  }
+}
