@@ -1,7 +1,7 @@
 # amqp-send-test
-Send JSON test message to AMQP message queue with a Kubernetes cluster
+Send JSON test message to AMQP message queue from within a Kubernetes cluster
 
-# Test steps
+## Test steps
 - clone repository
   
 - add `./helm/amqp-send-test/production-values.yaml`. This file is included in `.gitignore`
