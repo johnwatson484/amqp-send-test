@@ -1,3 +1,6 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=johnwatson484_amqp-send-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=johnwatson484_amqp-send-test)
+[![Known Vulnerabilities](https://snyk.io/test/github/johnwatson484/amqp-send-test/badge.svg)](https://snyk.io/test/github/johnwatson484/amqp-send-test)
+
 # amqp-send-test
 Send JSON test message to AMQP message queue from within a Kubernetes cluster
 
